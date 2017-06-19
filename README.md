@@ -5,17 +5,21 @@ This is an ESP32 (esp-idf) library for the DHT22 low cost temperature/humidity s
 Jun 2017: Ricardo Timmermann, new for DHT22
 Code Based on Adafruit Industries and Sam Johnston. Please help to improve this code.
 
-PLEASE KEEP THIS CODE IN LESS THAN 0XFF LINES. EACH LINE MAY CONTAIN ONE BUG !!!
+PLEASE KEEP THIS CODE IN LESS THAN 0xFF LINES. EACH LINE MAY CONTAIN ONE BUG !!!
 
-*Building DHT22 lib*
+*Running DHT22*
 
 Create folder called DTH22. In this folder run:
 
 ```
 $ git clone https://github.com/gosouth/DHT22.git
+
+make menuconfig
+make
+make flash monitor
 ```
 
-*USE*
+##USE
 
 See DHT_main.c
 
@@ -49,7 +53,7 @@ See DHT_main.c
 	}
 ```
 
-*copy/paste from AM2302/DHT22 Docu:*
+##copy/paste from AM2302/DHT22 Docu:
 
 DATA: Hum = 16 bits, Temp = 16 Bits, check-sum = 8 Bits
 
