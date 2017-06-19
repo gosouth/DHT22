@@ -49,7 +49,7 @@ See DHT_main.c
 	}
 ```
 
-# copy/paste from AM2302/DHT22 Docu:
+*copy/paste from AM2302/DHT22 Docu:*
 
 DATA: Hum = 16 bits, Temp = 16 Bits, check-sum = 8 Bits
 
