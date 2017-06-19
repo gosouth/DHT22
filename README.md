@@ -14,9 +14,9 @@ Create folder called DTH22. In this folder run:
 ```
 $ git clone https://github.com/gosouth/DHT22.git
 
-make menuconfig
-make
-make flash monitor
+$ make menuconfig
+$ make
+$ make flash monitor
 ```
 
 **USE**
