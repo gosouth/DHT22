@@ -1,37 +1,27 @@
 # DHT22 / AM2302 library for ESP32 (ESP-IDF)
-===========================================
 
 	This is an ESP32 (esp-idf) library for the DHT22 low cost temperature/humidity sensors.
 
-	Jun 2017:	Ricardo Timmermann, new for DHT22
+	Jun 2017: Ricardo Timmermann, new for DHT22
 
 	Code Based on Adafruit Industries and Sam Johnston and Coffe & Beer. Please help
 	to improve this code.
 
 	PLEASE KEEP THIS CODE IN LESS THAN 0XFF LINES. EACH LINE MAY CONTAIN ONE BUG !!!
 
-# Building curl
+*Building DHT22 lib*
 
-Create folder called `components` to host curl as a component.  In the `components` folder run:
+Create folder called DTH22. In this folder run:
 
 ```
-$ git clone https://github.com/curl/curl.git
+$ git clone https://github.com/gosouth/DHT22.git
 ```
 
-This results in a download/clone of the `curl` library.  A new folder called `curl` will be found.  Go into that folder.
+*USE*
 
-We now need to copy some ESP32 specific configuration files.  These are:
+See DHT_main.c
 
-* `include\curl\curlbuild.h`
-* `lib\curl_config.h`
-* `component.mk`
-
-Once done, we should be able to build our ESP-IDF project as normal and that will include the construction
-of the curl library ready for use.  Now you can code directly to the curl APIs or you can code to the 
-C++ REST classes that leverage curl.
-
-#USE
-
+```
 	void DHT_task(void *pvParameter)
 	{
 		setDHTgpio( 4 );
@@ -59,7 +49,7 @@ C++ REST classes that leverage curl.
 		vTaskDelay( 1000 / portTICK_RATE_MS );
 		xTaskCreate( &DHT_task, "DHT_task", 2048, NULL, 5, NULL );
 	}
-
+```
 
 # copy/paste from AM2302/DHT22 Docu:
 
