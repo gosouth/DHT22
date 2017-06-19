@@ -14,7 +14,7 @@ Create folder called DTH22. In this folder run:
 ```
 $ git clone https://github.com/gosouth/DHT22.git
 
-$ make menuconfig
+$ make menuconfig and make sure to set Component config->LWIP->recv_bufsize
 $ make
 $ make flash monitor
 ```
