@@ -1,13 +1,11 @@
 # DHT22 / AM2302 library for ESP32 (ESP-IDF)
 
-	This is an ESP32 (esp-idf) library for the DHT22 low cost temperature/humidity sensors.
+This is an ESP32 (esp-idf) library for the DHT22 low cost temperature/humidity sensors.
 
-	Jun 2017: Ricardo Timmermann, new for DHT22
+Jun 2017: Ricardo Timmermann, new for DHT22
+Code Based on Adafruit Industries and Sam Johnston. Please help to improve this code.
 
-	Code Based on Adafruit Industries and Sam Johnston and Coffe & Beer. Please help
-	to improve this code.
-
-	PLEASE KEEP THIS CODE IN LESS THAN 0XFF LINES. EACH LINE MAY CONTAIN ONE BUG !!!
+PLEASE KEEP THIS CODE IN LESS THAN 0XFF LINES. EACH LINE MAY CONTAIN ONE BUG !!!
 
 *Building DHT22 lib*
 
@@ -21,7 +19,7 @@ $ git clone https://github.com/gosouth/DHT22.git
 
 See DHT_main.c
 
-```
+```C
 	void DHT_task(void *pvParameter)
 	{
 		setDHTgpio( 4 );
