@@ -2,8 +2,9 @@
 
 This is an ESP32 (esp-idf) library for the DHT22 low cost temperature/humidity sensors.
 
-Jun 2017: Ricardo Timmermann, new for DHT22
-Code Based on Adafruit Industries and Sam Johnston. Please help to improve this code.
+Jun 2017: Ricardo Timmermann, new for DHT22. 
+
+Code based on Adafruit Industries and Sam Johnston. Please help to improve this code.
 
 PLEASE KEEP THIS CODE IN LESS THAN 0xFF LINES. EACH LINE MAY CONTAIN ONE BUG !!!
 
