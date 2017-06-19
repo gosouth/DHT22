@@ -19,7 +19,7 @@ make
 make flash monitor
 ```
 
-##USE
+**USE**
 
 See DHT_main.c
 
@@ -53,7 +53,7 @@ See DHT_main.c
 	}
 ```
 
-##copy/paste from AM2302/DHT22 Docu:
+**opy/paste from AM2302/DHT22 Docu:**
 
 DATA: Hum = 16 bits, Temp = 16 Bits, check-sum = 8 Bits
 
@@ -61,10 +61,10 @@ Example: MCU has received 40 bits data from AM2302 as
 0000 0010 1000 1100 0000 0001 0101 1111 1110 1110
 16 bits RH data + 16 bits T data + check sum
 
-1) we convert 16 bits RH data from binary system to decimal system, 0000 0010 1000 1100 → 652
+1) convert 16 bits RH data from binary system to decimal system, 0000 0010 1000 1100 → 652
 Binary system Decimal system: RH=652/10=65.2%RH
 
-2) we convert 16 bits T data from binary system to decimal system, 0000 0001 0101 1111 → 351
+2) convert 16 bits T data from binary system to decimal system, 0000 0001 0101 1111 → 351
 Binary system Decimal system: T=351/10=35.1°C
 
 When highest bit of temperature is 1, it means the temperature is below 0 degree Celsius. 
